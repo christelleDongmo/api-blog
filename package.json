@@ -14,7 +14,17 @@
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "mongoose": "^9.3.1",
+    "mysql2": "^3.20.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christelleDongmo/api-blog.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/christelleDongmo/api-blog/issues"
+  },
+  "homepage": "https://github.com/christelleDongmo/api-blog#readme"
 }
