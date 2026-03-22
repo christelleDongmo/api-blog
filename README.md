@@ -132,5 +132,5 @@ Les informations sensibles, comme les paramètres de connexion à la base de don
 Ce fichier n’est pas versionné grâce au fichier .gitignore.
 
 Auteur
-Projet réalisé par Christie dans le cadre d’un travail pratique.
+Projet réalisé par CHRISTELLE DONGMO dans le cadre du TP de l'UE INF222 EC2.
 
