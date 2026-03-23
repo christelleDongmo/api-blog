@@ -44,8 +44,6 @@ L’objectif de ce projet est de mettre en pratique :
 ---
 
 ## Structure du projet
-
-```bash
 api-articles/
 ├── .env.example
 ├── .gitignore
@@ -60,34 +58,25 @@ api-articles/
     ├── routes/
     │   └── articleRoutes.js
     └── models/
-Installation et exécution
-1. Cloner le dépôt
-Bash
+
+## Inatallation et execution
+
+1.Cloner le depot
 
 git clone https://github.com/christelleDongmo/api-blog.git
 cd api-articles
-2. Installer les dépendances
-Bash
+
+2.Installer les dependances
 
 npm install
-3. Configurer les variables d’environnement
-Créer un fichier .env à la racine du projet en s’inspirant de .env.example.
 
-Exemple :
+3.Configurer les variables d'environnement
 
-env
+Creer un fichier .env a la racine du projet en s'inspirant de .env.example.
 
-PORT=5000
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=votre_utilisateur_mysql
-DB_PASSWORD=votre_mot_de_passe_mysql
-DB_NAME=api_articles
-4. Créer la base de données
-Exécuter les commandes SQL suivantes dans MySQL :
+4.Creer la base de donnees
 
-SQL
-
+Executer les commandes SQL suivantes dans MySQL :
 CREATE DATABASE api_articles;
 
 USE api_articles;
@@ -101,10 +90,12 @@ CREATE TABLE articles (
     hashtags TEXT,
     date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-5. Lancer le serveur
-Bash
 
+5.Lancer le serveur
+
+taper cette commande dans le dossier du projet
 node src/app.js
+
 Endpoints disponibles
 GET /api/articles : récupérer tous les articles
 POST /api/articles : créer un article
@@ -112,6 +103,7 @@ GET /api/articles/:id : récupérer un article par son identifiant
 PUT /api/articles/:id : modifier un article
 DELETE /api/articles/:id : supprimer un article
 GET /api/articles/search?query=mot : rechercher des articles
+
 Exemple de requête
 Création d’un article
 Bash
@@ -119,18 +111,19 @@ Bash
 curl -X POST http://localhost:5000/api/articles \
 -H "Content-Type: application/json" \
 -d '{"titre":"Mon article","contenu":"Contenu test","auteur":"Christie","categorie":"Tech","hashtags":["node","mysql"]}'
+
 Documentation de l’API
 La documentation Swagger est accessible à l’adresse suivante :
 
 Bash
 
 http://localhost:5000/api-docs
+
 Elle permet de visualiser et de tester les différentes routes de l’API.
 
-Sécurité et configuration
+## Sécurité et configuration
 Les informations sensibles, comme les paramètres de connexion à la base de données, sont stockées dans un fichier .env.
 Ce fichier n’est pas versionné grâce au fichier .gitignore.
 
-Auteur
+## Auteur
 Projet réalisé par CHRISTELLE DONGMO dans le cadre du TP de l'UE INF222 EC2.
-
